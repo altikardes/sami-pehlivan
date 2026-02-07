@@ -1,0 +1,120 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #f6f3ee; /* krem ton */
+  color: #2b2b2b;
+  line-height: 1.8;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      rgba(246, 243, 238, 0.92),
+      rgba(246, 243, 238, 0.92)
+    ),
+    url("assets/images/hero-placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+}
+
+.years {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  max-width: 600px;
+  opacity: 0.85;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #a68c5d; /* sıcak vurgu */
+  margin-top: 0.5rem;
+}
+
+.section p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* HIGHLIGHT (Akdeniz Oyunları) */
+.highlight {
+  background-color: #ece6dc;
+  border-left: 4px solid #a68c5d;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* IMAGES (ileride kullanılacak) */
+.image-block {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+.image-caption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
