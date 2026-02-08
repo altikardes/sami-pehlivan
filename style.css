@@ -20,9 +20,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(
-      rgba(246, 243, 238, 0.92),
-      rgba(246, 243, 238, 0.92)
+  background:
+    linear-gradient(
+      rgba(246, 243, 238, 0.78),
+      rgba(246, 243, 238, 0.78)
     ),
     url("assets/images/hero-placeholder.jpg");
   background-size: cover;
@@ -81,6 +82,19 @@ body {
   border-left: 4px solid #a68c5d;
 }
 
+/* AKDENİZ OYUNLARI – FİLİGRAN ZEMİN */
+.medal-watermark {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(246, 243, 238, 0.95),
+      rgba(246, 243, 238, 0.95)
+    ),
+    url("assets/images/akdeniz-altin.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* FOOTER */
 .footer {
   text-align: center;
@@ -89,7 +103,7 @@ body {
   opacity: 0.8;
 }
 
-/* IMAGES (ileride kullanılacak) */
+/* IMAGES */
 .image-block {
   margin: 2rem 0;
   text-align: center;
@@ -100,6 +114,11 @@ body {
   height: auto;
   border-radius: 4px;
   filter: grayscale(100%) contrast(1.05);
+}
+
+/* Altın madalya foto – dengeli boyut */
+.image-balanced img {
+  max-width: 720px;
 }
 
 .image-caption {
@@ -116,5 +135,9 @@ body {
 
   .section {
     padding: 3rem 1.5rem;
+  }
+
+  .image-balanced img {
+    max-width: 100%;
   }
 }
