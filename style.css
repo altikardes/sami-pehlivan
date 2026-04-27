@@ -20,6 +20,12 @@ body {
   color: var(--text);
   background: radial-gradient(circle at top right, #eaf0ff, var(--bg) 42%);
   line-height: 1.65;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .top-nav {
@@ -154,6 +160,13 @@ h3 {
   gap: 1rem;
 }
 
+.timeline,
+.sami-story-grid,
+.cards,
+.photo-grid {
+  min-width: 0;
+}
+
 .timeline-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -176,9 +189,8 @@ h3 {
 
 .timeline-visual img {
   width: 100%;
-  height: 210px;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
-  display: block;
 }
 
 .timeline-visual figcaption {
@@ -229,9 +241,8 @@ h3 {
 
 .person-card img {
   width: 100%;
-  height: 260px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  display: block;
   border-bottom: 1px solid var(--border);
 }
 
@@ -274,9 +285,8 @@ h3 {
 
 .photo img {
   width: 100%;
-  height: 260px;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
-  display: block;
 }
 
 .family-photo img {
@@ -324,13 +334,6 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .photo img {
-    height: 260px;
-  }
-
-  .timeline-visual img {
-    height: 200px;
-  }
 }
 
 @media (max-width: 640px) {
