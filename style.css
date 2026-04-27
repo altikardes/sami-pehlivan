@@ -147,6 +147,13 @@ h3 {
   gap: 1rem;
 }
 
+.sami-story-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .timeline-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -251,6 +258,10 @@ h3 {
   display: block;
 }
 
+.family-photo img {
+  object-position: center 38%;
+}
+
 .photo figcaption {
   font-size: 0.86rem;
   color: var(--muted);
@@ -288,6 +299,10 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .sami-story-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .photo img {
     height: 260px;
   }
@@ -312,7 +327,8 @@ h3 {
   }
 
   .cards,
-  .photo-grid {
+  .photo-grid,
+  .sami-story-grid {
     grid-template-columns: 1fr;
   }
 }
