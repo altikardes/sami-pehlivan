@@ -168,6 +168,7 @@ h3 {
 }
 
 .timeline-item {
+  width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -177,26 +178,6 @@ h3 {
 
 .timeline-item p {
   color: var(--muted);
-}
-
-.timeline-visual {
-  margin-top: 0.9rem;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.timeline-visual img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-}
-
-.timeline-visual figcaption {
-  font-size: 0.82rem;
-  color: var(--muted);
-  padding: 0.5rem 0.65rem 0.65rem;
 }
 
 .year {
@@ -232,6 +213,7 @@ h3 {
 }
 
 .person-card {
+  width: 100%;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -273,6 +255,7 @@ h3 {
 }
 
 .photo {
+  width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
