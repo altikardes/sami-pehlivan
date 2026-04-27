@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Pehlivan Ailesi Mirasi</title>
+  <desc id="desc">Uc nesli temsil eden gecici konsept gorsel</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1f4b" />
+      <stop offset="100%" stop-color="#4754c9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <circle cx="320" cy="330" r="78" fill="#e8edff" />
+  <circle cx="600" cy="250" r="98" fill="#f4f6ff" />
+  <circle cx="880" cy="330" r="78" fill="#e8edff" />
+  <rect x="220" y="450" width="760" height="170" rx="28" fill="#f4f6ff" fill-opacity="0.95" />
+  <text x="600" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" fill="#2f3f9f">
+    Sami - Murat - Yusuf
+  </text>
+</svg>
